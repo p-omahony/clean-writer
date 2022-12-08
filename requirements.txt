@@ -1,0 +1,10 @@
+torch
+torchvision
+torchaudio
+numpy
+ds_ctcdecoder
+scikit-image
+matplotlib
+levenshtein
+pandas
+opencv-python
