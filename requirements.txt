@@ -8,3 +8,6 @@ matplotlib
 levenshtein
 pandas
 opencv-python
+gdown
+colorama
+tqdm
