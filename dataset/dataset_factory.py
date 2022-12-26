@@ -49,7 +49,7 @@ class FormDataset(Dataset):
         labels = []
         for k in range(len(xmins)) : 
             boxes.append([xmins[k], ymins[k],xmaxs[k],ymaxs[k]])
-            labels.append(0)
+            labels.append(1)
         
         boxes = torch.as_tensor(np.array(boxes))
         labels = torch.as_tensor(np.array(labels))

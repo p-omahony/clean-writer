@@ -81,4 +81,5 @@ for epoch in tqdm(range(5), desc='Epoch', disable=False):
         optimizer.step()
 
     running_loss += loss.item()
-    torch.save(model.state_dict(), f='model_%s'%epoch+'.pt')
+    if epoch+1%5==0:
+      torch.save(model.state_dict(), f='model_%s'%epoch+'.pt')
